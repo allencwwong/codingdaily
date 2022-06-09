@@ -51,7 +51,7 @@ const DisplayNested = ({ nestedObjected }) => {
 
 export default App;
 ```
-
+# Day 2
 ## React Coding Challenge 2
 #### source: https://medium.com/@justin.sherman/react-coding-interview-challenge-2-bb8909e2b4a0
 
