@@ -77,4 +77,33 @@ const RobotList = () => {
 };
 export default App;
 ```
+# Day 3 + 4 (missed day 3)
+## React Coding Challenge 3
+#### source: https://medium.com/@justin.sherman/react-coding-interview-challenge-3-94bc3386ba1c
+
+Write a functional component to render a button and a list of activities. The list of activities should start out with one activity. When the user clicks the button, an additional activity should be fetched and appended to the list. To generate a random activity, issue a get request to “https://www.boredapi.com/api/activity” — an API for development that does not require authentication. Each request will return a new, random object containing the following fields: activity, type, participants, price, link, key, and accessibility. The values associated with these fields are either strings or numbers. Here is an example of one such object:
+
+```
+{
+  "activity": "Take your dog on a walk",
+  "type": "relaxation",
+  "participants": 1,
+  "price": 0,
+  "link": "",
+  "key": "9318514",
+  "accessibility": 0.2
+}
+```
+
+![image](https://user-images.githubusercontent.com/14840506/173016383-fb4edad2-35f7-4647-8eea-63ceec354f2e.png)
+
+## React Coding Challenge 4
+#### source: https://medium.com/@justin.sherman/react-coding-interview-challenge-4-c41e2874d8ef
+
+Write a component that renders five stacked identical images of ladder pieces. When the user hovers over a piece of the ladder, that ladder piece (as well as all the pieces below it) should expand to a larger size. The starting position of the component (when the user’s mouse is not over any of the images), should look like this. The component should return to this state when the user is not hovering over any images. The image can be found at “https://raw.githubusercontent.com/jusshe/coding-challenge-pictures/main/ladder.png”.
+
+Below are two other possible states — when the user is hovering their mouse over the second image from the bottom and when the user is hovering their mouse over the fourth image from the bottom, respectively. Importantly, your solution should also be easily generalizable to any number of ladder segments.
+
+
+
 
