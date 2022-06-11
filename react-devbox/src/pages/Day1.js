@@ -37,9 +37,9 @@ export const Day1= () => {
       });
 
     return (
-        <div style={{ margin: "auto", width: "70%", paddingTop: 40 }}>
+        <>
           <h1>Day 1</h1>
           <DisplayNested nestedObjected={nestedObjected} />
-        </div>
+        </>
       );
 }

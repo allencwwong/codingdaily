@@ -2,7 +2,14 @@ import { Link, Outlet } from "react-router-dom";
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
+function App({days}) {
+  const NavList = ()=>{
+    const navList = []
+    for(let i=1;i<=days;i++){
+      navList.push(<li><Link to={`day${i}`}>{`Day ${i}`}</Link></li>)
+    }
+    return navList
+  }
   return (
     <div className="App">
       <header className="App-header">
@@ -12,14 +19,11 @@ function App() {
         </h1>
       </header>
       <ol className="nav-content">
-        <li>
-          <Link to="day1">Day 1</Link>
-        </li>
-        <li>
-          <Link to="day2">Day 2</Link>
-        </li>
+        <NavList />
       </ol>
-      <Outlet />
+      <div style={{ margin: "auto", width: "70%", paddingTop: 40 }}>
+        <Outlet />
+      </div>
     </div>
   );
 }
