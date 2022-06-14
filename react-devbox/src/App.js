@@ -15,7 +15,7 @@ function App({days}) {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo"/>
         <h1>
-          My React Daily Journal
+          Coding React Journal
         </h1>
       </header>
       <ol className="nav-content">
