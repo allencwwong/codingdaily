@@ -21,8 +21,6 @@ export const Day2= () => {
     }
 
     return (
-      <>
-        <h1>Day2</h1>
         <div>
           <form onSubmit={handleSubmit}>
             <input onChange={(e)=>handleOnChange(e)}/>
@@ -32,6 +30,5 @@ export const Day2= () => {
             {robotList ? <RobotList data={robotList} /> : null }
           </div>
         </div>
-      </>
     );
 }

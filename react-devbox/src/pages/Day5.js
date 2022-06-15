@@ -48,9 +48,6 @@ const UserList = () => {
   }
 
   return (
-    <div>
-      <h1>Day 5</h1>
       <UserItem />
-    </div>
   )
 };

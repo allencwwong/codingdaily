@@ -51,7 +51,6 @@ export const Day3= () => {
     // render data
     return (
       <>
-        <h1>Day3</h1>
         <button onClick={handleClickGen}>Generate new activity</button>
         <ActivityList activties={data} />
       </>

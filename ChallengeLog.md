@@ -104,6 +104,32 @@ Write a component that renders five stacked identical images of ladder pieces. W
 
 Below are two other possible states — when the user is hovering their mouse over the second image from the bottom and when the user is hovering their mouse over the fourth image from the bottom, respectively. Importantly, your solution should also be easily generalizable to any number of ladder segments.
 
+## React Coding Challenge 5
 
+#### source: https://medium.com/@justin.sherman/react-coding-interview-challenge-5-57c30b25fbb3
 
+Create a functional component that renders an object of users extracted from context using React’s useContext() hook. The object’s keys are the users' names and the associated values are booleans that indicate whether the users are online or offline. The object should be defined in the parent component’s state and the object, as well as its associated setState() function, should be provided to the aforementioned functional component via context.
 
+## React Coding Challenge 6
+#### source: https://medium.com/@justin.sherman/react-coding-interview-challenge-6-222d66b6cdd5
+
+Create a functional component to render a list of tasks (along with their subtasks) from an object. The subtasks should be organized into two columns, completed and to be completed, based on the boolean value associated with each task. The object will have the following format: any number of keys where each key is the text of the task, an array of any number of objects associated with each key, and finally, an object with one field (the subtask text) and one associated boolean value at every index of the array. Here is an example of one such object:
+
+```
+const INITIAL_LIST = {
+  "Organize closet": [
+    { "Donate old clothes and shoes": false },
+    { "Buy new shelf": false },
+    { "Put in shelf by color": false },
+  ],
+  "Finish homework": [
+    { "Finish math homework": false },
+    { "Finish science homework": false },
+    { "Finish Reactjs homework": false },
+  ],
+  "Achieve nirvana": [
+    { "Meditate a little": false },
+    { "Gain some wisdom": false },
+  ],
+};
+```
