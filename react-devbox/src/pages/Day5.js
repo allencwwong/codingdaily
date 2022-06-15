@@ -39,12 +39,10 @@ const UserList = () => {
   },[userState]);
 
   const UserItem = ()=>{
-      const list = []
-    for (let [key, value] of Object.entries(userState)) {
-        list.push(`${key}: ${value ? '🟢' : '🔴'}`)
-
-      }
-      return list
+    return Object.entries(userState).map(entry=>{
+      const [k,v] = entry
+      return (`${k}: ${v ? '🟢' : '🔴'}`)
+    })
   }
 
   return (
