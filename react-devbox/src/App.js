@@ -4,7 +4,7 @@ import logo from './logo.svg';
 import './App.css';
 
 function App({days}) {
-  const [selectedDay,setSelectedDay] = useState(1)
+  const [selectedDay,setSelectedDay] = useState('Day 1')
 
   const handleClickNav=(e)=>{
     setSelectedDay(e.target.innerText)

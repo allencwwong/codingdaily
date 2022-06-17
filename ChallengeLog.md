@@ -133,3 +133,10 @@ const INITIAL_LIST = {
   ],
 };
 ```
+## React Coding Challenge 7
+
+#### source: https://medium.com/@justin.sherman/react-coding-interview-challenge-7-a773daf12955
+
+Create a functional component that renders a text input field and displays a list of the strings that the user has entered below it. Each string in the list should be displayed wholly if it has fewer than 6 characters. If not, it should be displayed as the first five characters of the string followed by ellipses. When the user clicks on a string from the list, a modal should popup containing the complete text of the string. The modal should be centered on the page, and it should block the input field. The modal should close when the user clicks outside of it (you should add a border or background to the modal to test that this functionality is included).
+
+The picture below shows the component after the user has entered three strings: “Hi, my name is Justin”, “What is your name?”, and “hello”.
