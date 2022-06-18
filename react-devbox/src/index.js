@@ -3,10 +3,10 @@ import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route} from 'react-router-dom'
 import reportWebVitals from './reportWebVitals';
 import App from './App';
-import {Day1,Day2,Day3,Day4,Day5,Day6,Day7} from './pages';
+import {Day1,Day2,Day3,Day4,Day5,Day6,Day7,Day8} from './pages';
 import './index.css';
 
-const DAY_NUM = 7
+const DAY_NUM = 8
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
@@ -20,6 +20,7 @@ root.render(
             <Route path="day5" element={<Day5 />} />
             <Route path="day6" element={<Day6 />} />
             <Route path="day7" element={<Day7 />} />
+            <Route path="day8" element={<Day8 />} />
         </Route>
       </Routes>
     </BrowserRouter>

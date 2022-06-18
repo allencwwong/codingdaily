@@ -140,3 +140,9 @@ const INITIAL_LIST = {
 Create a functional component that renders a text input field and displays a list of the strings that the user has entered below it. Each string in the list should be displayed wholly if it has fewer than 6 characters. If not, it should be displayed as the first five characters of the string followed by ellipses. When the user clicks on a string from the list, a modal should popup containing the complete text of the string. The modal should be centered on the page, and it should block the input field. The modal should close when the user clicks outside of it (you should add a border or background to the modal to test that this functionality is included).
 
 The picture below shows the component after the user has entered three strings: “Hi, my name is Justin”, “What is your name?”, and “hello”.
+
+
+## React Coding Challenge 7
+#### source: https://medium.com/@justin.sherman/react-coding-interview-challenge-8-f852c6d19385
+
+Create a functional component that accepts as a prop an array of question objects and renders a quiz. The quiz displays one question at a time in the order that they appear in the questions array, and it only advances to the next question when the user selects an answer choice. The quiz does not support returning to previously answered questions, although you can attempt to add this functionality later. After the user has answered all the questions, display the user’s score as a percentage. An example input array is given below, but be sure not to assume that there are a fixed number of questions or that each question has a fixed number of answer choices. The “correct” field of each question object indicates the index of the correct answer choice in the answers array.
