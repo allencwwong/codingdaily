@@ -42,12 +42,7 @@ export const Day8= () => {
           correct: 0,
         },
       ];
-
-      // loop thru qs 
-      // render question 
-      // set state to keep ans and score 
-      // handleclick ans
-      // end of loop display score
+      
     const [score,setScore] = useState({
         q: 0,
         ans: [],
@@ -60,7 +55,6 @@ export const Day8= () => {
             q: score.q + 1,
             ans: score.ans
         }
-        console.log(e.target.value, QUESTIONS[score.q].correct.toString())
         if(e.target.value === QUESTIONS[score.q].correct.toString()){
             updatedScore.correct = score.correct+1
         }else{
@@ -80,7 +74,6 @@ export const Day8= () => {
     if(score.q < QUESTIONS.length){
         return (
           <>
-                {JSON.stringify(score)}
                 <div>{QUESTIONS[score.q].question}</div>
                 {
                     QUESTIONS[score.q].answers.map((a,idx)=>(
