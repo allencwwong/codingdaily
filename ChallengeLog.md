@@ -141,8 +141,17 @@ Create a functional component that renders a text input field and displays a lis
 
 The picture below shows the component after the user has entered three strings: “Hi, my name is Justin”, “What is your name?”, and “hello”.
 
-
-## React Coding Challenge 7
+## React Coding Challenge 8
 #### source: https://medium.com/@justin.sherman/react-coding-interview-challenge-8-f852c6d19385
 
 Create a functional component that accepts as a prop an array of question objects and renders a quiz. The quiz displays one question at a time in the order that they appear in the questions array, and it only advances to the next question when the user selects an answer choice. The quiz does not support returning to previously answered questions, although you can attempt to add this functionality later. After the user has answered all the questions, display the user’s score as a percentage. An example input array is given below, but be sure not to assume that there are a fixed number of questions or that each question has a fixed number of answer choices. The “correct” field of each question object indicates the index of the correct answer choice in the answers array.
+
+## React Coding Challenge 9
+#### source: https://medium.com/@justin.sherman/react-coding-interview-challenge-9-dc20873e0ce5
+
+Write a component to render a searchable list of random users. You can fetch the users by issuing a get request to “https://randomuser.me/api?results=number” where number is the number of users you want to receive. Randomuser.me is a free, no auth-token API for development. When initially writing your component, query for only a couple of users, as your requests may be blocked if you accidentally issue too many for several hundred users. Here is an example of the data return from a request for one result:
+
+## React Coding Challenge 10
+#### source: https://medium.com/@justin.sherman/react-coding-interview-challenge-12-b8d7d13c96e6
+
+Write a functional component that allows a user to enter ratings on the five-star system. The component should initially display five empty stars in a row. When the user hovers over a star, that star as well as all the stars that come before it in the row should become filled (both the empty star and filled star image URLs are provided in the started code below). When the user stops hovering over the star, the component should return to its starting state. Further, if a user clicks on a star, then the component should continue to display that rating even after the user stops hovering; the component should reset only after the user hovers on a star that comes before the clicked star. If the user hovers over later stars, the component should fill those stars but should still display the clicked rating after the hover ends.
