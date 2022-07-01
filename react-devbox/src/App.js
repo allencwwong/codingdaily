@@ -4,7 +4,7 @@ import logo from './logo.svg';
 import './App.css';
 
 function App({days}) {
-  const [selectedDay,setSelectedDay] = useState('Day 1')
+  const [selectedDay,setSelectedDay] = useState('Project')
 
   const handleClickNav=(e)=>{
     setSelectedDay(e.target.innerText)
@@ -13,7 +13,7 @@ function App({days}) {
   const NavList = ()=>{
     const navList = []
     for(let i=1;i<=days;i++){
-      navList.push(<li><Link onClick={handleClickNav} to={`day${i}`}>{`Day ${i}`}</Link></li>)
+      navList.push(<li><Link onClick={handleClickNav} to={`day${i}`}>{`P ${i}`}</Link></li>)
     }
     return navList
   }
